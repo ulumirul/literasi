@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    ---var--bagroun: url(../img/16326494_rm222-mind-16.jpg);
+    ---var--init: rgba(88, 79, 79, 0.662);
+}
+
+.new{
+    background-image: url(../img/13900618_5291450.jpg);
+}
+
+body{
+    background-image: url(../img/16326494_rm222-mind-16.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+nav{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav .bag ul{
+    display: flex;
+}
+
+nav .bag ul li{
+    list-style: none;
+    padding-left: 12px;
+    cursor: pointer;
+}
+
+nav .bag ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav .bag ul li:hover{
+    font-family: 'Alkatra';
+}
+
+nav .bag ul li .wert{
+    color: blue;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid; */
+    height: 90%;
+}
+
+.register.tamu{
+    display: flex;
+}
+
+.login{
+    border: 1px solid;
+    width: 70%;
+    height: 40%;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login ul li{
+    list-style: none;
+    line-height: 30px;
+}
+
+.login ul li span{
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.register span{
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.content .img{
+    display: none;
+}
+
+.register{
+    display: none;
+    border: 1px solid;
+    width: 80%;
+    height: 60%;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.register ul li{
+    list-style: none;
+    line-height: 30px;
+}
+
+@media (min-width: 720px) {
+
+    .content .img{
+        display: block;
+        /* border: 1px solid; */
+        width: 110%;
+    }
+
+    .content .img img{
+        /* display: block; */
+        width: 110%;
+        /* border: 1px solid; */
+    }
+
+    .content form{
+        margin: 19px;
+    }
+
+    .register{
+        height: 80%;
+    }
+
+    .content.bro{
+        flex-direction: row-reverse;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    nav{
+        justify-content: space-evenly;
+    }
+    
+    .content .img img{
+        /* display: block; */
+        width: 70%;
+        /* border: 1px solid; */
+    }
+
+    .content .img{
+        /* display: block; */
+        /* border: 1px solid; */
+        width: 90%;
+        margin-left: 10%;
+    }
+
+    .content{
+        margin: 0px 70px;
+    }
+
+    .login{
+        width: 40%;
+    }
+
+    .register{
+        height: 80%;
+        width: 40%;
+        /* margin-right: 30% */
+    }
+
+}

@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(./img/front-view-three-colored-books-with-copy-space.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    background-attachment: fixed;
+    /* position: fixed; */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    top: 0.1px;
+    position: sticky;
+    position: -webkit-sticky;
+    background-color: rgb(88, 88, 253);
+}
+
+.bar1 ul{
+    display: flex;
+    align-items: center;
+}
+
+.bar1{
+    display: none;
+}
+
+
+.bort{
+    display: none;
+    position: fixed;
+    border: 1px solid;
+}
+
+.bort ul li{
+    list-style: none;
+}
+
+.bort ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.rab{
+    display: none;
+}
+
+nav i{
+    margin: 12px;
+}
+
+.conten{
+    margin: 0px 22px;
+    display: flex;
+    /* border: 1px solid; */
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.conten .layer1 img{
+    width: 70%;
+}
+
+.conten .layer1{
+    /* border: 1px solid; */
+    width: 70%;
+    margin-left: 60px;
+}
+
+.layer2{
+    display: flex;
+    /* border: 1px solid; */
+    flex-direction: column;
+    width: 70%;
+    justify-content: space-evenly;
+}
+
+.isi{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* margin-top: 92px; */
+    /* position: absolute; */
+}
+
+footer{
+    position: fixed;
+    border-top: 1px solid;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(180, 220, 255);
+}
+
+@media (min-width: 720px) {
+    
+    .isi{
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        flex-direction: row;
+        /* flex: 1; */
+        /* justify-content: center; */
+    }
+
+    .conten{
+        margin: 0px 22px;
+        display: flex;
+        border: 1px solid;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        width:40%;
+    }
+
+    .bar1{
+        display: block;
+    }
+
+    .bar{
+        display: none;
+    }
+
+    .bar1 ul li{
+        list-style: none;
+        margin-left: 12px;
+    }
+
+    .bar1 ul li a{
+        text-decoration: none;
+        color: black;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    
+    .conten{
+        width: 20%;
+    }
+
+}

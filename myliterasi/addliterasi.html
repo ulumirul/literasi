@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Edu+NSW+ACT+Foundation:wght@500&family=Fasthand&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8ead86d5ab.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../img/open-book-icon-education-symbol-flat-design-vector-illustration_53876-136267-removebg-preview.png">
+    <title>Add-Literasi</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./MyLiterasi.php"><i class="fa-solid fa-arrow-left"></i></a></li>
+            <li><i class="fa-solid fa-file-pen fa-bounce"></i></li>
+        </ul>
+        <div class="lut">Add Literasi</div>
+        <div class="pro"><i class="fa-solid fa-user"></i></div>
+    </nav>
+    <form action="./pro.php" method="post">
+        <ul>
+            <li><input type="text" name="judul" placeholder="judul"></li>
+            <li><textarea name="ckeditor" id="ckeditor" cols="30" rows="10" placeholder="isi" class="ckeditor"></textarea></li>
+            <li><button type="submit" name="sbp">upload</button></li>
+        </ul>
+    </form>
+</body>
+<script src="../ckeditor/ckeditor.js"></script>
+</html>

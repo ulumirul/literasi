@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    border: 1px solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: aliceblue;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 17px;
+}
+
+nav .lut{
+    font-family: 'Edu NSW ACT Foundation';
+    font-size: large;
+    font-weight: bold;
+}
+
+form ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+form ul li{
+    list-style: none;
+    line-height: 5;
+}
+
